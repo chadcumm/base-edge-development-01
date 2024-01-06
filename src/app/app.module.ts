@@ -9,6 +9,7 @@ import { MatLuxonDateModule, LuxonDateAdapter } from '@angular/material-luxon-ad
 import { DateAdapter, MAT_DATE_FORMATS, MAT_DATE_LOCALE } from '@angular/material/core';
 import { MAT_FORM_FIELD_DEFAULT_OPTIONS } from '@angular/material/form-field';
 import { createCustomElement } from '@angular/elements';
+import { ProjectVersionComponent } from './project-version/project-version.component';
 
 export const configFactory = (configService: ConfigService) => {
   return () => configService.loadConfig();
@@ -30,7 +31,8 @@ export const CUSTOM_DATE_FORMATS = {
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ProjectVersionComponent
   ],
   imports: [
     BrowserModule,
