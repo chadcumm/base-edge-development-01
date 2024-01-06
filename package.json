@@ -1,9 +1,10 @@
 {
-  "name": "mpage-component-template",
-  "version": "0.0.0",
+  "name": "base-edge-development-01",
+  "version": "0.0.5",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
+    "prebuild": "npm --no-git-tag-version version patch",
     "build": "ng build --configuration production && node concat.js",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"

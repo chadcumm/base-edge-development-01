@@ -70,8 +70,8 @@ export class AppModule {
       injector: this.injector
     });
     
-    if (!customElements.get('mpage-component-template')) {
-      customElements.define('mpage-component-template', element);
+    if (!customElements.get('base-edge-development-01')) {
+      customElements.define('base-edge-development-01', element);
     }
   }
 
